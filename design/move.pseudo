@@ -1,25 +1,47 @@
 # Project One Move-Between-Rooms Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: conceptual support for M6; movement design for M7
-#
-# Review the course-provided movement flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
+# The Forgotten Grimoire: Secrets of the Arcane Tower
+# Current room begins at Main Gate; room exits are stored in the game map.
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+START GAME
+SET current_room TO "Main Gate"
+SET inventory TO empty list
+SET game_running TO TRUE
 
-# TODO 2: Prompt for and receive the player's movement command.
+WHILE game_running IS TRUE
+    OUTPUT current_room AND inventory
+    OUTPUT "Enter a command: go <direction> or get <item>."
+    INPUT player_command
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
+    IF player_command starts with "go "
+        SET direction TO the text after "go "
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
+        IF direction IS NOT north, south, east, or west
+            OUTPUT "Invalid direction. Use north, south, east, or west."
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
+        ELSE IF direction IS NOT an available exit from current_room
+            OUTPUT "You cannot go that way."
 
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+        ELSE
+            SET current_room TO the room connected by direction
+            OUTPUT "You entered " + current_room
+
+            IF current_room IS "Hollow Sanctum"
+                IF inventory contains all six required artifacts
+                    OUTPUT "You defeated the Hollow Archmage and recovered the Forgotten Grimoire. You win!"
+                ELSE
+                    OUTPUT "The Hollow Archmage defeats you. Game over."
+                END IF
+
+                SET game_running TO FALSE
+            END IF
+        END IF
+
+    ELSE IF player_command starts with "get "
+        PERFORM get-item process using current_room, inventory, and player_command
+
+    ELSE
+        OUTPUT "Invalid command. Use go <direction> or get <item>."
+    END IF
+END WHILE
+
+END GAME
