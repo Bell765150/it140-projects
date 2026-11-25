@@ -1,67 +1,66 @@
 # Project One Storyboard | Text-Based Adventure Game
 
-> Complete the `TODO:` prompts using your own game idea. This file is a graded
-> Project One deliverable and later becomes a reference for Project Two.
-
 ## Theme and Storyline
 
 **Theme:**
 
-TODO: Name and briefly describe your game's theme.
+The Forgotten Grimoire: Secrets of the Arcane Tower
+
+A medieval fantasy adventure centered on magic, exploration,
+ancient mysteries, and a battle against dark forces.
 
 **Storyline:**
 
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+An apprentice wizard enters the Shattered Citadel, an ancient
+stronghold corrupted by the Hollow Archmage. To defeat the
+Archmage and recover the secrets of the Forgotten Grimoire,
+the player must explore the citadel and collect six magical
+artifacts: the Runestone of Binding, Phoenix Feather, Silver
+Locket, Moonstone Amulet, Crystal of Whispers, and Enchanted
+Quill. Once all six artifacts have been collected, the player
+can enter the Hollow Sanctum and defeat the Hollow Archmage.
+Entering the Hollow Sanctum before collecting all six
+artifacts results in defeat.
 
 ## Rooms
 
-Project One requires a minimum of eight rooms.
-
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
-
-Add more rooms if your design needs them.
+1. Main Gate (Start Room)
+2. Binding Chamber
+3. Phoenix Sanctuary
+4. Forgotten Quarters
+5. Moonlit Observatory
+6. Whispering Library
+7. Scriptorium
+8. Hollow Sanctum (Villain Room)
 
 ## Items
 
-With the minimum eight-room design, Project One requires at least six items.
-Every room except the start room and villain room must contain one item.
-
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
-
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
+1. Runestone of Binding - Binding Chamber
+2. Phoenix Feather - Phoenix Sanctuary
+3. Silver Locket - Forgotten Quarters
+4. Moonstone Amulet - Moonlit Observatory
+5. Crystal of Whispers - Whispering Library
+6. Enchanted Quill - Scriptorium
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+The Hollow Archmage is a powerful wizard corrupted by dark
+magic who resides within the Hollow Sanctum. The player must
+collect all six magical artifacts before confronting him.
 
 ## Storyboard and Map Check
 
-Before submitting, compare this storyboard with `game_map.drawio`.
-
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
+* [x] I included eight (8) rooms.
+* [x] I included six (6) collectable items.
+* [x] The start room has no item.
+* [x] The villain room has no item.
+* [x] Every room except the start room and villain room contains one item.
 * [ ] Room, item, and villain names match my map.
 * [ ] The map allows the player to collect all required items before the
   villain is encountered.
 
 ## Project Two Handoff
 
-Keep this file after Project One. In Module Seven, use these names and design
-choices when building the final room/item dictionary and player-facing output.
+Keep this file after Project One. In Module Seven, use these
+names and design choices when building the final room/item
+dictionary and player-facing output.
